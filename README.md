@@ -1,19 +1,26 @@
-# Flask Full-Stack Web Application
+# Loan Eligibility Expert System (LEES)
 
-This is a full-stack web application built with **Flask (Python)** as the backend framework. It demonstrates how to combine server-side logic with dynamic HTML templates and static frontend assets (CSS, JS). The application can serve as a foundation for building more complex systems such as dashboards, content management tools, or data-driven platforms.
+This is a rule-based **Loan Eligibility Expert System (LEES)** built using the **Experta** library in Python. The system mimics the decision-making process of a human loan officer by evaluating loan applicants against a set of predefined rules.
 
-## Features
+## 🔍 Project Description
 
-- 🧠 Backend: Flask for routing, templating, and server logic
-- 🎨 Frontend: HTML, CSS, and JavaScript integration via Flask templates
-- 📦 Organized folder structure for templates, static files, and app logic
-- 🔧 Easily deployable on platforms like Replit, Render, or Railway
-- 📁 Configurable via `requirements.txt` and `config.py`
+LEES is designed to assess personal loan applications using a knowledge-based approach. It uses a set of logical rules (e.g., income level, credit history, age, employment status) to determine whether an applicant is eligible for a loan, and it provides a reason for approval or rejection.
 
-## Setup Instructions
+The system serves as an educational and practical example of how **Expert Systems** can be implemented using **Python and Experta**.
+
+## ✅ Features
+
+- 🧠 Rule-based logic using Experta
+- 📊 Evaluates multiple loan eligibility criteria
+- 📝 Provides clear explanations for approval or rejection
+- 📂 Supports uploading applicant data via CSV
+- 🧾 Adds eligibility results and reasons directly to the dataset
+- 🌐 Ready for integration into web-based or desktop applications
+
+## 🚀 How to Run
 
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/your-username/loan-eligibility-expert-system.git
+cd loan-eligibility-expert-system
