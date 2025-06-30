@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Loan Eligibility Expert System{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+        <h1 class="display-4 mb-4">Welcome to the Loan Eligibility Expert System</h1>
+        <p class="lead mb-5">Our expert system uses advanced rule-based decision making to evaluate loan applications.</p>
+    </div>
+</div>
+
+<div class="row justify-content-center g-4">
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <h5 class="card-title">Single Applicant</h5>
+                <p class="card-text">Evaluate a single loan application through our interactive form.</p>
+                <a href="{{ url_for('evaluate_single') }}" class="btn btn-primary">Start Evaluation</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <h5 class="card-title">Batch Upload</h5>
+                <p class="card-text">Process multiple applications by uploading a CSV or Excel file.</p>
+                <a href="{{ url_for('upload_batch') }}" class="btn btn-primary">Upload File</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <h5 class="card-title">Learn More</h5>
+                <p class="card-text">Understand how our expert system evaluates loan applications.</p>
+                <a href="{{ url_for('about') }}" class="btn btn-primary">About System</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Upload Batch Applications{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="mb-0">Batch Application Upload</h2>
+            </div>
+            <div class="card-body">
+                <form method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="file" class="form-label">Upload Excel (.xlsx) or CSV File</label>
+                        <input type="file" class="form-control" id="file" name="file" accept=".csv,.xlsx" required>
+                        <div class="form-text">
+                            File must contain columns: income, debt, sources, credit_score, bankruptcy, insurance
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Process Applications</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-header">
+                <h3 class="mb-0">File Format Requirements</h3>
+            </div>
+            <div class="card-body">
+                <h4>Required Columns:</h4>
+                <ul>
+                    <li><strong>income</strong> - Annual income (number)</li>
+                    <li><strong>debt</strong> - Total debt (number)</li>
+                    <li><strong>sources</strong> - Number of income sources (integer)</li>
+                    <li><strong>credit_score</strong> - Credit score 0-100 (integer)</li>
+                    <li><strong>bankruptcy</strong> - "yes" or "no"</li>
+                    <li><strong>insurance</strong> - "yes" or "no"</li>
+                </ul>
+                <div class="alert alert-info">
+                    <strong>Note:</strong> The system will add two columns to your file:
+                    <ul class="mb-0">
+                        <li><strong>decision</strong> - "Approved" or "Declined"</li>
+                        <li><strong>explanation</strong> - Detailed reasoning for the decision</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

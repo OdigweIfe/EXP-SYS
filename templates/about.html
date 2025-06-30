@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block title %}About - Loan Expert System{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <h1 class="mb-4">About the Loan Eligibility Expert System</h1>
+        
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="mb-0">How It Works</h2>
+            </div>
+            <div class="card-body">
+                <p>Our expert system evaluates loan applications using a rule-based approach that mimics the decision-making process of experienced loan officers.</p>
+                
+                <h3>Evaluation Criteria</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Rule</th>
+                                <th>Requirement</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Minimum Income</td>
+                                <td>Must be ≥ $30,000</td>
+                            </tr>
+                            <tr>
+                                <td>Debt-to-Income Ratio</td>
+                                <td>Must be ≤ 20%</td>
+                            </tr>
+                            <tr>
+                                <td>Income Sources</td>
+                                <td>Must have ≥ 2 sources</td>
+                            </tr>
+                            <tr>
+                                <td>Credit Score</td>
+                                <td>Must be > 80</td>
+                            </tr>
+                            <tr>
+                                <td>Bankruptcy</td>
+                                <td>Must have no bankruptcies</td>
+                            </tr>
+                            <tr>
+                                <td>Insurance</td>
+                                <td>Must have insurance coverage</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="mb-0">Features</h2>
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h5>Single Application Evaluation</h5>
+                        <p>Submit individual applications through our interactive form.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h5>Batch Processing</h5>
+                        <p>Upload CSV or Excel files containing multiple applications for efficient processing.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h5>Detailed Explanations</h5>
+                        <p>Receive comprehensive explanations for why applications were approved or declined.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
